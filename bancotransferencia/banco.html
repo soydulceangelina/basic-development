@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BancoCOL</title>
+    <style>
+     body {
+      background-color: #55D6BE;
+      color: #E6E6EA;
+      font-family: Helvetica;
+    }
+    .bot1{
+      text-decoration: none;
+      padding: 10px;
+      font-weight: 600;
+      font-size: 20px;
+      color: #E6E6EA;
+      background-color: #ffa971;
+      border-radius: 6px;
+      border: 2px solid #55D6BE;
+    }
+    .bot1:hover{
+      color: #ffa971;
+      background-color: #E6E6EA;
+    }
+    .bot2{
+      text-decoration: none;
+      padding: 7px;
+      font-weight: 600;
+      font-size: 15px;
+      color: #E6E6EA;
+      background-color: #ffa971;
+      border-radius: 8px;
+      border: 2px solid #55D6BE;
+    }
+    .bot2:hover{
+      color: #ffa971;
+      background-color: #E6E6EA;
+    }
+    </style>
+  </head>
+  <body>
+    <center>
+    <p>
+      <img src= "bancocollogo.png"/>
+    </p>
+    <div id="panel_acciones">
+      <button class="bot1" id="boton_realizarTransf">Realizar Tranferencia</button>
+    </div>
+    <div id="divFormulario" style="display:none">
+      <table>
+        <tr>
+          <th>Cuenta Cliente</th>
+          <td><input type="number" id="txtCliente"></td>
+        </tr>
+        <tr>
+          <th>Cuenta Destino</th>
+          <td><input type="number" id="txtDestino"></td>
+        </tr>
+        <tr>
+          <th>Cantidad a transferir</th>
+          <td><input type="number" id="txtValor"></td>
+        </tr>
+        <tr>
+          <th>Banco Destino</th>
+          <td><select id="txtBanco">
+              <option selected>Seleccionar Banco</option>
+              <option>BancoCOL</option>
+              <option>BancoMex</option>
+              <option>BancoArg</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td  align="center">
+            <button class="bot2"id="botonOk">Transferir</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <p id="resultado"></p>
+    <script src="transferencia.js"></script>
+    </center>
+  </body>
+</html>
